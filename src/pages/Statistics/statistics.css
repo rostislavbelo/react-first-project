@@ -1,0 +1,38 @@
+.statistics {
+    padding: 80px;
+
+}
+
+.statistics__top {
+    display        : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statistics__info {
+    display              : grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-areas  : "day diagram"
+        "pomodor diagram";
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.statistics__day {
+    grid-area: day;
+}
+
+.statistics__pomodors {
+    grid-area: pomodor;
+}
+
+.statistics__diagram {
+    grid-area       : diagram;
+    width           : 100%;
+    background-color: #F4F4F4;
+    min-height      : 471px;
+}
+
+.statistics__analytics {
+    display: flex;
+}

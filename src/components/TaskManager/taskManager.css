@@ -1,0 +1,71 @@
+.task-manager {
+    width  : 35%;
+    padding: 0;
+}
+
+.task-manager ul {
+    display        : flex;
+    flex-direction : column;
+    text-align     : left;
+    padding        : 0 0 0 0;
+    margin         : 0 0 30px 0;
+    font-size      : 16px;
+    line-height    : 33px;
+    list-style-type: none;
+}
+
+.task-manager h1 {
+    text-align: left;
+    margin    : 0 0 10px 0;
+}
+
+
+
+.task-manager__task-creator input {
+    width           : 100%;
+    max-width       : 370px;
+    height          : 55px;
+    background-color: #f4f4f4;
+    padding         : 15px;
+    font-size       : 16px;
+    line-height     : 17px;
+}
+
+.task-manager__task-creator input:hover {
+    outline: 1px solid rgba(168, 182, 79, 0.4);
+}
+
+.task-manager__task-creator input:focus,
+.task-manager__task-creator input:active {
+    outline: 1px solid rgba(168, 182, 79, 1);
+}
+
+.task-manager__task-creator input::placeholder {
+    font-weight: 300;
+    font-size  : 16px;
+    line-height: 17px;
+    color      : #999999;
+}
+
+.task-manager__task-creator button {
+    background: #a8b64f;
+    text-align: center;
+    color     : #ffffff;
+    margin-top: 25px;
+}
+
+.task-manager__task-creator {
+    margin-bottom: 25px;
+}
+
+.task-manager__task-list {
+    max-width: 370px;
+    padding  : 0;
+}
+
+.task-manager__time-total {
+    font-weight: 300;
+    font-size  : 16px;
+    line-height: 17px;
+    color: #999999;
+}

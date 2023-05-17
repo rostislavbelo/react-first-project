@@ -1,0 +1,17 @@
+.clock {
+    font-weight: 200;
+    font-size  : 150px;
+    line-height: 179px;
+    color      : #333333;
+    position   : relative;
+    width      : max-content;
+    margin     : 0 auto 70px;
+}
+
+.clock button {
+    padding  : 0;
+    position : absolute;
+    right    : -70px;
+    top      : 50%;
+    transform: translateY(-50%);
+}

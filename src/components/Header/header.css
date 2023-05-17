@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 10px 80px 10px 82px;
+    background-color: #ffffff;
+}
+
+.header__logoButton {
+    cursor: pointer;
+    width: 205px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 3px;
+}
+
+.header__statistickButton {
+    cursor: pointer;
+    width: 114px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    padding: 3px;
+}

@@ -1,0 +1,161 @@
+.timer {
+    width           : 55%;
+    /* max-width    : 733px; */
+    min-height      : 533px;
+    height          : max-content;
+    background-color: #f4f4f4;
+    position        : relative;
+}
+
+.timer__top {
+    width           : 100%;
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    background-color: #C4C4C4;
+    font-size       : 16px;
+    line-height     : 17px;
+    font-weight     : 400;
+    color           : #FFFFFF;
+    padding         : 5px 40px;
+    min-height      : 55px;
+    margin-bottom   : 80px;
+}
+
+.timer__top span {
+    display: block;
+}
+
+.timer__top p {
+    margin     : 0;
+    font-weight: 700;
+}
+
+.timer__clock {
+    font-weight: 200;
+    font-size  : 150px;
+    line-height: 179px;
+    color      : #333333;
+    position   : relative;
+    width      : max-content;
+    margin     : 0 auto 70px;
+}
+
+.timer__clock button {
+    padding  : 0;
+    position : absolute;
+    right    : -70px;
+    top      : 50%;
+    transform: translateY(-50%);
+}
+
+.timer__handlers {
+    margin : 0 auto;
+    width  : max-content;
+    display: flex;
+}
+
+.timer__btn-start {
+    background-color: #a8b64f;
+    font-weight     : 500;
+    font-size       : 16px;
+    line-height     : 17px;
+    text-align      : center;
+    color           : #ffffff;
+    margin-right    : 25px;
+}
+
+.timer__btn-stop {
+    background-color: transparent;
+    border          : 2px solid #c4c4c4;
+    font-weight     : 500;
+    font-size       : 16px;
+    line-height     : 17px;
+    text-align      : center;
+    color           : #c4c4c4;
+    padding         : 18px 49px;
+    pointer-events  : none;
+}
+
+.timer__no-active {
+    position        : absolute;
+    width           : 100%;
+    height          : 100%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    flex-direction  : column;
+    top             : 0;
+    left            : 0;
+    background-color: #f4f4f4;
+}
+
+.timer__no-active p {
+    display    : block;
+    font-size  : 36px;
+    line-height: 42px;
+    text-align : center;
+}
+
+.timer.work.starting .timer__top {
+    background-color: #DC3E22;
+}
+
+.timer.work.starting .timer__clock span {
+    color: #DC3E22;
+}
+
+.timer.work.starting.paused .timer__clock span {
+    color: #333333;
+}
+
+.timer.work.starting .timer__btn-stop {
+    border-color  : #DC3E22;
+    color         : #DC3E22;
+    pointer-events: all;
+}
+
+.timer__wrap {
+    clip-path          : polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    animation-duration : 1s;
+    animation-name     : ap-timer;
+    animation-direction: alternate;
+}
+
+@keyframes ap-timer {
+    from {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.timer.break.starting .timer__top {
+    background-color: #A8B64F;
+
+}
+
+.timer.break.starting .timer__top {
+    background-color: #A8B64F;
+
+}
+
+.timer.break.starting .timer__clock span {
+    color: #A8B64F;
+
+}
+
+.timer.break.starting.paused .timer__clock span {
+    color: #333333;
+}
+
+.timer__btn-ready {
+    background-color: #DC3E22;
+    font-weight     : 500;
+    font-size       : 16px;
+    line-height     : 17px;
+    text-align: center;
+    color: #FFFFFF;
+}
